@@ -1,0 +1,60 @@
+{
+ "name": "Population",
+ "children": [
+    {
+     "name": "Western",
+     "children": [	  
+		{ "name": "Zavkhan","size":  69916 },
+		{ "name": "Govi-Altai","size":  56209 },
+		{ "name": "Bayan-Ulgii","size":  100189 },
+		{ "name": "Khovd","size":  83517 },
+		{ "name": "Uvs","size":  80763 }
+     ]
+    },
+    {
+     "name": "Khangai",
+     "children": [
+		{ "name": "Orkhon","size":  100731 },
+		{ "name": "Ovorkhangai","size":  112353 },
+		{ "name": "Bulgan","size":  60014 },
+		{ "name": "Bayankhongor","size":  83936 },
+		{ "name": "Arkhangai","size":  92059 },
+		{ "name": "Khuvsgul","size":  128159 }
+     ]
+    },
+    {
+     "name": "Central",
+     "children": [
+		{ "name": "Tuv","size":  90421 },
+		{ "name": "Govisumber","size":  16522 },
+		{ "name": "Selenge","size":  106292 },
+		{ "name": "Dornogovi","size":  65267 },
+		{ "name": "Darkhan-Uul","size":  100939 },
+		{ "name": "Omnogovi","size":  61655 },
+		{ "name": "Dundgovi","size":  44429 }
+     ]
+    },
+    {
+     "name": "Eastern",
+     "children": [
+		{ "name": "Dornod","size":  76476 },
+		{ "name": "Sukhbaatar","size":  59034 },
+		{ "name": "Khentii","size":  72609 }
+     ]
+    },
+    {
+     "name": "Ulaanbaatar",
+     "children": [
+		{ "name": "Baganuur","size":  38419 },
+		{ "name": "Bagakhangai","size":  4131 },
+		{ "name": "Khan-Uul","size":  150946 },
+		{ "name": "Bayanzurkh","size":  323852 },
+		{ "name": "Nalaikh","size":  35801 },
+		{ "name": "Bayangol","size":  215663 },
+		{ "name": "Sukhbaatar","size":  147633 },
+		{ "name": "Chingeltei","size":  162619 },
+		{ "name": "Songinokhairkhan","size":  317224 }
+     ]
+    }	
+   ]
+}

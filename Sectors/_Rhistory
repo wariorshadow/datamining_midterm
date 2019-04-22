@@ -1,0 +1,512 @@
+rowSums(teachers[,c(3,8)]),
+rep("Associate Prof.", 20))
+AssiProf = data.frame(teachers[,1],
+rowSums(teachers[,c(4,9)]),
+rep("Assistant Prof.", 20))
+Lecture = data.frame(teachers[,1],
+teachers[,5],
+rep("Lecture", 20))
+TA = data.frame(teachers[,1],
+teachers[,6],
+rep("TA", 20))
+allStaffs = merge(AssoProf,AssiProf,Lecture,TA)
+allStaffs = rbind.data.frame(AssoProf,AssiProf,Lecture,TA)
+allStaffs = rbind(AssoProf,AssiProf)
+rm(list = ls(all=TRUE))
+library(plotly)
+teachers = read.csv('teachers.csv', header = TRUE)
+members = read.csv('members.csv', header = TRUE)
+prof = data.frame(teachers[,1],
+rowSums(teachers[,c(2,7)]),
+rep("Prof.", 20))
+AssoProf = data.frame(teachers[,1],
+rowSums(teachers[,c(3,8)]),
+rep("Associate Prof.", 20))
+AssiProf = data.frame(teachers[,1],
+rowSums(teachers[,c(4,9)]),
+rep("Assistant Prof.", 20))
+Lecture = data.frame(teachers[,1],
+teachers[,5],
+rep("Lecture", 20))
+TA = data.frame(teachers[,1],
+teachers[,6],
+rep("TA", 20))
+allStaffs = data.frame()
+allStaffs = rbind(AssoProf,AssiProf,Lecture,TA)
+View(allStaffs)
+rm(list = ls(all=TRUE))
+library(plotly)
+teachers = read.csv('teachers.csv', header = TRUE)
+members = read.csv('members.csv', header = TRUE)
+Prof = data.frame(teachers[,1],
+rowSums(teachers[,c(2,7)]),
+rep("Prof.", 20))
+AssoProf = data.frame(teachers[,1],
+rowSums(teachers[,c(3,8)]),
+rep("Associate Prof.", 20))
+AssiProf = data.frame(teachers[,1],
+rowSums(teachers[,c(4,9)]),
+rep("Assistant Prof.", 20))
+Lecture = data.frame(teachers[,1],
+teachers[,5],
+rep("Lecture", 20))
+TA = data.frame(teachers[,1],
+teachers[,6],
+rep("TA", 20))
+allStaffs = Prof
+allStaffs = rbind(allStaffs,AssoProf,AssiProf,Lecture,TA)
+View(allStaffs)
+rm(list = ls(all=TRUE))
+library(plotly)
+teachers = read.csv('teachers.csv', header = TRUE)
+members = read.csv('members.csv', header = TRUE)
+Prof = data.frame(teachers[,1],
+rowSums(teachers[,c(2,7)]),
+rep("Prof.", 20))
+AssoProf = data.frame(teachers[,1],
+rowSums(teachers[,c(3,8)]),
+rep("Associate Prof.", 20))
+AssiProf = data.frame(teachers[,1],
+rowSums(teachers[,c(4,9)]),
+rep("Assistant Prof.", 20))
+Lecture = data.frame(teachers[,1],
+teachers[,5],
+rep("Lecture", 20))
+TA = data.frame(teachers[,1],
+teachers[,6],
+rep("TA", 20))
+allStaffs = Prof
+allStaffs = rbind(allStaffs, AssoProf)
+allStaffs = rbind(allStaffs, AssiProf)
+allStaffs = rbind(allStaffs, Lectu
+rm(list = ls(all=TRUE))
+library(plotly)
+teachers = read.csv('teachers.csv', header = TRUE)
+members = read.csv('members.csv', header = TRUE)
+Prof = data.frame(teachers[,1],
+rowSums(teachers[,c(2,7)]),
+rep("Prof.", 20))
+AssoProf = data.frame(teachers[,1],
+rowSums(teachers[,c(3,8)]),
+rep("Associate Prof.", 20))
+AssiProf = data.frame(teachers[,1],
+rowSums(teachers[,c(4,9)]),
+rep("Assistant Prof.", 20))
+Lecture = data.frame(teachers[,1],
+teachers[,5],
+rep("Lecture", 20))
+TA = data.frame(teachers[,1],
+teachers[,6],
+rep("TA", 20))
+allStaffs = Prof
+allStaffs = rbind(allStaffs, AssoProf)
+allStaffs = rbind(allStaffs, AssiProf)
+allStaffs = rbind(allStaffs, Lecture)
+allStaffs = rbind(allStaffs, TA)
+rm(list = ls(all=TRUE))
+library(plotly)
+teachers = read.csv('teachers.csv', header = TRUE)
+members = read.csv('members.csv', header = TRUE)
+Prof = data.frame(teachers[,1],
+rowSums(teachers[,c(2,7)]),
+rep("Prof.", 20))
+AssoProf = data.frame(teachers[,1],
+rowSums(teachers[,c(3,8)]),
+rep("Associate Prof.", 20))
+AssiProf = data.frame(teachers[,1],
+rowSums(teachers[,c(4,9)]),
+rep("Assistant Prof.", 20))
+Lecture = data.frame(teachers[,1],
+teachers[,5],
+rep("Lecture", 20))
+TA = data.frame(teachers[,1],
+teachers[,6],
+rep("TA", 20))
+allStaffs = Prof
+allStaffs = rbind(allStaffs, AssoProf)
+allStaffs = rbind(allStaffs, AssiProf)
+allStaffs = rbind(allStaffs, Lecture)
+allStaffs = rbind(allStaffs, TA)
+rm(list = ls(all=TRUE))
+library(plotly)
+teachers = read.csv('teachers.csv', header = TRUE)
+members = read.csv('members.csv', header = TRUE)
+Prof = data.frame(teachers[,1],
+rowSums(teachers[,c(2,7)]),
+rep("Prof.", 20))
+names(Prof) = c("years", "people", "position")
+AssoProf = data.frame(teachers[,1],
+rowSums(teachers[,c(3,8)]),
+rep("Associate Prof.", 20))
+names(AssoProf) = c("years", "people", "position")
+AssiProf = data.frame(teachers[,1],
+rowSums(teachers[,c(4,9)]),
+rep("Assistant Prof.", 20))
+names(AssiProf) = c("years", "people", "position")
+Lecture = data.frame(teachers[,1],
+teachers[,5],
+rep("Lecture", 20))
+names(Lecture) = c("years", "people", "position")
+TA = data.frame(teachers[,1],
+teachers[,6],
+rep("TA", 20))
+names(TA) = c("years", "people", "position")
+rm(list = ls(all=TRUE))
+library(plotly)
+teachers = read.csv('teachers.csv', header = TRUE)
+members = read.csv('members.csv', header = TRUE)
+Prof = data.frame(teachers[,1],
+rowSums(teachers[,c(2,7)]),
+rep("Prof.", 20))
+names(Prof) = c("years", "people", "position")
+AssoProf = data.frame(teachers[,1],
+rowSums(teachers[,c(3,8)]),
+rep("Associate Prof.", 20))
+names(AssoProf) = c("years", "people", "position")
+AssiProf = data.frame(teachers[,1],
+rowSums(teachers[,c(4,9)]),
+rep("Assistant Prof.", 20))
+names(AssiProf) = c("years", "people", "position")
+Lecture = data.frame(teachers[,1],
+teachers[,5],
+rep("Lecture", 20))
+names(Lecture) = c("years", "people", "position")
+TA = data.frame(teachers[,1],
+teachers[,6],
+rep("TA", 20))
+names(TA) = c("years", "people", "position")
+allStaffs = Prof
+allStaffs = rbind(allStaffs, AssoProf)
+allStaffs = rbind(allStaffs, AssiProf)
+allStaffs = rbind(allStaffs, Lecture)
+allStaffs = rbind(allStaffs, TA)
+source('C:/Users/pecu6/Desktop/video/2017-03-05/code/payment.R', echo=TRUE)
+p
+source('C:/Users/pecu6/Desktop/video/2017-03-05/code/payment.R', echo=TRUE)
+source('C:/Users/pecu6/Desktop/video/2017-03-05/code/payment.R', echo=TRUE)
+source('C:/Users/pecu6/Desktop/video/2017-03-05/code/payment.R', echo=TRUE)
+is.vector(.Random.seed)
+str(.Random.seed)
+typeof(.Random.seed)
+source('C:/Users/pecu6/Desktop/video/2017-03-05/code/payment.R', echo=TRUE)
+source('C:/Users/pecu6/Desktop/video/2017-03-05/code/payment.R', echo=TRUE)
+source('C:/Users/pecu6/Desktop/video/2017-03-05/code/payment.R', echo=TRUE)
+source('C:/Users/pecu6/Desktop/video/2017-03-05/code/payment.R', echo=TRUE)
+source('C:/Users/pecu6/Desktop/video/2017-03-05/code/payment.R', echo=TRUE)
+source('C:/Users/pecu6/Desktop/video/2017-03-05/code/payment.R', echo=TRUE)
+source('C:/Users/pecu6/Desktop/video/2017-03-05/code/payment.R', echo=TRUE)
+source('C:/Users/pecu6/Desktop/video/2017-03-05/code/payment.R', echo=TRUE)
+source('C:/Users/pecu6/Desktop/video/2017-03-05/code/payment.R', echo=TRUE)
+help(signup, package = 'plotly')
+source('C:/Users/pecu6/Desktop/video/2017-03-05/code/payment.R', echo=TRUE)
+source('C:/Users/pecu6/Desktop/video/2017-03-05/code/payment.R', echo=TRUE)
+source('C:/Users/pecu6/Desktop/video/2017-03-05/code/payment.R', echo=TRUE)
+rm(list = ls(all=TRUE))
+library(plotly)
+teachers = read.csv('teachers.csv', header = TRUE)
+postions = c("Prof.", "Associate Prof.", "Assistant Prof.",
+"Lecture", "TA")
+years = length(teachers[,1])
+allStaffs = data.frame(teachers[,1],
+rowSums(teachers[,c(2,7)]),
+rep(postions[1], years))
+names(allStaffs) = c("years", "people", "position")
+for(tid in c(5,6))
+{
+temp = data.frame(teachers[,1],
+teachers[,tid],
+rep(postions[tid-1], years))
+names(temp) = c("years", "people", "position")
+allStaffs = rbind(allStaffs, temp)
+}
+source('C:/Users/pecu6/Desktop/video/2017-03-05/code/payment.R', echo=TRUE)
+source('C:/Users/pecu6/Desktop/video/2017-03-05/code/payment.R', echo=TRUE)
+p
+source('C:/Users/pecu6/Desktop/video/2017-03-05/code/payment.R', encoding = 'BIG5', echo=TRUE)
+source('C:/Users/pecu6/Desktop/video/2017-03-05/code/payment.R', encoding = 'BIG5', echo=TRUE)
+source('C:/Users/pecu6/Desktop/video/2017-03-05/code/payment.R', echo=TRUE)
+View(teachers)
+source('C:/Users/pecu6/Desktop/video/2017-03-05/code/payment.R', echo=TRUE)
+source('C:/Users/pecu6/Desktop/video/2017-03-05/code/payment.R', echo=TRUE)
+View(allStaffs)
+source('C:/Users/pecu6/Desktop/video/2017-03-05/code/payment.R', encoding = 'BIG5', echo=TRUE)
+source('C:/Users/pecu6/Desktop/video/2017-03-05/code/payment.R', encoding = 'BIG5', echo=TRUE)
+htmlwidgets::saveWidget(p, "index.html")
+source('~/.active-rstudio-document', echo=TRUE)
+source('~/.active-rstudio-document', echo=TRUE)
+source('~/.active-rstudio-document', echo=TRUE)
+source('~/.active-rstudio-document', echo=TRUE)
+rm(list = ls(all=TRUE))
+library(plotly)
+teachers = read.csv('teachers.csv', header = TRUE)
+positions = c("Prof.", "Associate Prof.", "Assistant Prof.",
+"Insturctor", "TA")
+years = length(teachers[,1])
+allStaffs = data.frame(teachers[,1],
+rowSums(teachers[,c(2,7)]),
+rep(positions[1], years))
+names(allStaffs) = c("years","people","position")
+for(tid in seq(3,6))
+{
+if(tid < 5)
+{
+temp = data.frame(teachers[,1],
+rowSums(teachers[,c(tid,tid+5)]),
+rep(positions[tid-1],years))
+}
+else
+{
+temp = data.frame(teachers[,1],
+teachers[,tid],
+rep(positions[tid-1],years))
+}
+names(temp) = c("years","people","position")
+allStaffs = rbind(allStaffs,temp)
+}
+p<-plot_ly(allStaffs, x=~years, y=~people, color=~position) %>%
+add_lines() %>%
+layout(title = "Faculty Member at NTU in 1996--2015",
+xaxis = list(title = "Year"),
+yaxis = list(title = "No."))
+p
+htmlwidgets::saveWidget(p, "index.html")
+rm(list = ls(all=TRUE))
+library(plotly)
+teachers = read.csv('teachers.csv', header = TRUE)
+positions = c("Prof.", "Associate Prof.", "Assistant Prof.",
+"Insturctor", "TA")
+years = length(teachers[,1])
+allStaffs = data.frame(teachers[,1],
+rowSums(teachers[,c(2,7)]),
+rep(positions[1], years))
+names(allStaffs) = c("years","people","position")
+for(tid in seq(3,6))
+{
+if(tid < 5)
+{
+temp = data.frame(teachers[,1],
+rowSums(teachers[,c(tid,tid+5)]),
+rep(positions[tid-1],years))
+}
+else
+{
+temp = data.frame(teachers[,1],
+teachers[,tid],
+rep(positions[tid-1],years))
+}
+names(temp) = c("years","people","position")
+allStaffs = rbind(allStaffs,temp)
+}
+p<-plot_ly(allStaffs, x=~years, y=~people, color=~position) %>%
+add_lines() %>%
+layout(title = "Faculty Member at NTU in 1996--2015",
+xaxis = list(title = "Year"),
+yaxis = list(title = "No."))
+p
+htmlwidgets::saveWidget(p, "index.html")
+rm(list = ls(all=TRUE))
+library(plotly)
+teachers = read.csv('teachers.csv', header = TRUE)
+positions = c("Prof.", "Associate Prof.", "Assistant Prof.",
+"Insturctor", "TA")
+years = length(teachers[,1])
+allStaffs = data.frame(teachers[,1],
+rowSums(teachers[,c(2,7)]),
+rep(positions[1], years))
+names(allStaffs) = c("years","people","position")
+for(tid in seq(3,6))
+{
+if(tid < 5)
+{
+temp = data.frame(teachers[,1],
+rowSums(teachers[,c(tid,tid+5)]),
+rep(positions[tid-1],years))
+}
+else
+{
+temp = data.frame(teachers[,1],
+teachers[,tid],
+rep(positions[tid-1],years))
+}
+names(temp) = c("years","people","position")
+allStaffs = rbind(allStaffs,temp)
+}
+p<-plot_ly(allStaffs, x=~years, y=~people, color=~position) %>%
+add_lines() %>%
+layout(title = "Faculty Member at NTU in 1996--2015",
+xaxis = list(title = "Year"),
+yaxis = list(title = "No."))
+p
+htmlwidgets::saveWidget(p, "index.html")
+rm(list = ls(all=TRUE))
+library(plotly)
+teachers = read.csv('teachers.csv', header = TRUE)
+positions = c("Prof.", "Associate Prof.", "Assistant Prof.",
+"Insturctor", "TA")
+years = length(teachers[,1])
+allStaffs = data.frame(teachers[,1],
+rowSums(teachers[,c(2,7)]),
+rep(positions[1], years))
+names(allStaffs) = c("years","people","position")
+rm(list = ls(all=TRUE))
+library(plotly)
+teachers = read.csv('teachers.csv', header = TRUE)
+positions = c("Prof.", "Associate Prof.", "Assistant Prof.",
+"Insturctor", "TA")
+years = length(teachers[,1])
+allStaffs = data.frame(teachers[,1],
+rowSums(teachers[,c(2,7)]),
+rep(positions[1], years))
+names(allStaffs) = c("years","people","position")
+View(allStaffs)
+View(teachers)
+rm(list = ls(all=TRUE))
+library(plotly)
+teachers = read.csv('teachers.csv', header = TRUE)
+positions = c("Prof.", "Associate Prof.", "Assistant Prof.",
+"Insturctor", "TA")
+years = length(teachers[,1])
+allStaffs = data.frame(teachers[,1],
+rowSums(teachers[,c(2,2)]),
+rep(positions[1], years))
+names(allStaffs) = c("years","people","position")
+View(allStaffs)
+View(allStaffs)
+rm(list = ls(all=TRUE))
+library(plotly)
+teachers = read.csv('teachers.csv', header = TRUE)
+positions = c("Prof.", "Associate Prof.", "Assistant Prof.",
+"Insturctor", "TA")
+years = length(teachers[,1])
+allStaffs = data.frame(teachers[,1],
+teachers[,2],
+rep(positions[1], years))
+names(allStaffs) = c("years","people","position")
+View(allStaffs)
+rm(list = ls(all=TRUE))
+library(plotly)
+teachers = read.csv('teachers.csv', header = TRUE)
+positions = c("Prof.", "Associate Prof.", "Assistant Prof.",
+"Insturctor", "TA")
+years = length(teachers[,1])
+allStaffs = data.frame(teachers[,1],
+teachers[,2],
+rep(positions[1], years))
+names(allStaffs) = c("years","people","position")
+for(tid in seq(3,6))
+{
+if(tid < 5)
+{
+temp = data.frame(teachers[,1],
+rowSums(teachers[,c(tid,tid+5)]),
+rep(positions[tid-1],years))
+}
+else
+{
+temp = data.frame(teachers[,1],
+teachers[,tid],
+rep(positions[tid-1],years))
+}
+names(temp) = c("years","people","position")
+allStaffs = rbind(allStaffs,temp)
+}
+p<-plot_ly(allStaffs, x=~years, y=~people, color=~position) %>%
+add_lines() %>%
+layout(title = "Faculty Member at NTU in 1996--2015",
+xaxis = list(title = "Year"),
+yaxis = list(title = "No."))
+p
+htmlwidgets::saveWidget(p, "index.html")
+rm(list = ls(all=TRUE))
+library(plotly)
+teachers = read.csv('teachers.csv', header = TRUE)
+positions = c("Prof.", "Associate Prof.", "Assistant Prof.",
+"Insturctor", "TA")
+years = length(teachers[,1])
+allStaffs = data.frame(teachers[,1],
+teachers[,2],
+rep(positions[1], years))
+names(allStaffs) = c("years","people","position")
+p<-plot_ly(allStaffs, x=~years, y=~people, color=~position) %>%
+add_lines() %>%
+layout(title = "Faculty Member at NTU in 1996--2015",
+xaxis = list(title = "Year"),
+yaxis = list(title = "No."))
+p
+htmlwidgets::saveWidget(p, "index.html")
+rm(list = ls(all=TRUE))
+library(plotly)
+teachers = read.csv('teachers.csv', header = TRUE)
+positions = c("Prof.", "Associate Prof.", "Assistant Prof.",
+"Insturctor", "TA")
+years = length(teachers[,1])
+allStaffs = data.frame(teachers[,1],
+teachers[,2],
+rep(positions[1], years))
+names(allStaffs) = c("years","people","position")
+for(tid in seq(3,6))
+{
+temp = data.frame(teachers[,1],
+teachers[,tid],
+rep(positions[tid-1],years))
+names(temp) = c("years","people","position")
+allStaffs = rbind(allStaffs,temp)
+}
+p<-plot_ly(allStaffs, x=~years, y=~people, color=~position) %>%
+add_lines() %>%
+layout(title = "Faculty Member at NTU in 1996--2015",
+xaxis = list(title = "Year"),
+yaxis = list(title = "No."))
+p
+htmlwidgets::saveWidget(p, "index.html")
+rm(list = ls(all=TRUE))
+library(plotly)
+teachers = read.csv('teachers.csv', header = TRUE)
+positions = c("Prof.", "Associate Prof.", "Assistant Prof.",
+"Insturctor", "TA")
+years = length(teachers[,1])
+allStaffs = data.frame(teachers[,1],
+teachers[,2],
+rep(positions[1], years))
+names(allStaffs) = c("years","people","position")
+for(tid in seq(3,6))
+{
+temp = data.frame(teachers[,1],
+teachers[,tid],
+rep(positions[tid-1],years))
+names(temp) = c("years","people","position")
+allStaffs = rbind(allStaffs,temp)
+}
+p<-plot_ly(allStaffs, x=~years, y=~people, color=~position) %>%
+add_lines() %>%
+layout(title = "Faculty Members at National Taiwan University in 1996--2015",
+xaxis = list(title = "Year"),
+yaxis = list(title = "No."))
+p
+htmlwidgets::saveWidget(p, "index.html")
+install.packages("plotly")
+rm(list = ls(all=TRUE))
+library(plotly)
+teachers = read.csv('teachers.csv', header = TRUE)
+positions = c("Prof.", "Associate Prof.", "Assistant Prof.",
+"Insturctor", "TA")
+years = length(teachers[,1])
+allStaffs = data.frame(teachers[,1],
+teachers[,2],
+rep(positions[1], years))
+names(allStaffs) = c("years","people","position")
+for(tid in seq(3,6))
+{
+temp = data.frame(teachers[,1],
+teachers[,tid],
+rep(positions[tid-1],years))
+names(temp) = c("years","people","position")
+allStaffs = rbind(allStaffs,temp)
+}
+p<-plot_ly(allStaffs, x=~years, y=~people, color=~position) %>%
+add_lines() %>%
+layout(title = "Faculty Members at National Taiwan University in 1996--2015",
+xaxis = list(title = "Year"),
+yaxis = list(title = "No."))
+p
+htmlwidgets::saveWidget(p, "index.html")

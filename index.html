@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>fullPage.js — Basic Demo</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<style>
+#menu { margin: 0; padding: 0; position: fixed; left: 350px; top: 10px; list-style-type: none; z-index: 70;}
+#menu li { float: left; margin:  0 10px 0 0; font-size: 14px;}
+#menu a { float: left; padding: 10px 20px; background-color: #fff; color: #333; text-decoration: none;}
+#menu .active a { color: #fff; background-color: #333;}
+.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+</style>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script>
+$(function(){
+	$('#dowebok').fullpage({
+		sectionsColor: ['#1bbc9b', '#4BBFC3','#48D1CC', '#7BAABE', '#ADD8E6', '#48D1CC'],
+		anchors: ['page1', 'page2', 'page3', 'page4','page5','page6'],
+		menu: '#menu'
+	});
+});
+</script>
+</head>
+
+<body>
+
+<ul id="menu">
+	<li data-menuanchor="page1" class="active"><a href="#page1">Energy of Indonesia</a></li>
+	<li data-menuanchor="page2"><a href="#page2">Natural Gas</a></li>
+	<li data-menuanchor="page3"><a href="#page3">Oil</a></li>
+	<li data-menuanchor="page4"><a href="#page4">Coal</a></li>
+	<li data-menuanchor="page5"><a href="#page5">Production and Consumption</a></li>
+	<li data-menuanchor="page6"><a href="#page6">Future</a></li>
+</ul>
+
+<div id="dowebok">
+	<div class="section" align="center">
+		<div align="center">
+		<iframe src="https://my.visme.co/projects/dmv48j6k-indonesia-infographic" width="100%" height="650px" frameborder="0"></iframe>
+		</div>
+	</div>
+	<div class="section" align="center">
+		<div class="slide">
+			<iframe src="https://my.visme.co/projects/ojxmkwey-indonesia-natural-gas-reserves" width="100%" height="700px" allowfullscreen="true" frameborder="0"></iframe>		
+		</div>
+		<div class="slide">
+		<h4>Indonesia Natural Gas Reserves in 2017</h4>
+			<iframe src="https://plotdb.io/v/chart/20982" width="90%" height="550px" allowfullscreen="true" frameborder="0"></iframe>
+		</div>
+	</div>
+	<div class="section">
+		<div class="slide">
+			<iframe src="https://my.visme.co/projects/mxn0on4j-indonesia-petroleum-reserves" width="100%" height="700px" align="center" allowfullscreen="true" frameborder="0"></iframe>	
+		</div>
+		<div class="slide">
+		<h4>Indonesia Oil Reserves in 2017</h4>
+			<iframe src="https://plotdb.io/v/chart/20983" width="100%" height="550px" allowfullscreen="true" frameborder="0"></iframe>
+		</div>
+	</div>
+	<div class="section">
+		<div align="center">
+		<h4>Indonesia Coal Reserves </h4>
+			<iframe src="https://plotdb.io/v/chart/21205" width="100%" height="550px" align="center" allowfullscreen="true" frameborder="0"></iframe>
+		</div>
+	</div>
+	<div class="section">
+		<div class="slide">
+			<h5 color="#000000">Production and Consumption Natural Gas Diagram</h5>
+			<iframe src="https://wariorshadow.github.io/Midterm/Gas_Balance_Indonesia_edit.png" width="50%" height="700px" frameborder="0"></iframe>
+		</div>
+		<div class="slide">
+			<h5 color="#000000">Production and Consumption Oil Diagram</h5>
+			<iframe src="https://wariorshadow.github.io/Midterm/Oil_Balance_Indonesia_edit.png" width="50%" height="700px" frameborder="0"></iframe>
+		</div>
+		<div class="slide" >
+			<h5 color='#000000'>Production and Consumption Coal Diagram</h5>
+			<iframe src="https://wariorshadow.github.io/Midterm/Coal_Balance_Indonesia_edit.png" width="50%" height="700px" frameborder="0"></iframe>
+		</div>		
+	</div>
+	<div class="section" align="center">
+		<h4>Optimistic Scenario Energy In Indonesia Diagram</h4>
+			<iframe src="https://plotdb.io/v/chart/21198" width="90%" height="550px" allowfullscreen="true" frameborder="0"></iframe>
+		</div>
+</div>
+</body>
+</html>
